@@ -82,7 +82,7 @@ public class PayDialogFragment extends DialogFragment implements PwdEditText.OnT
         WindowManager.LayoutParams lp = window.getAttributes();
         lp.windowAnimations = R.style.DialogFragmentAnimation;
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        lp.height = WindowManager.LayoutParams.MATCH_PARENT;
         //设置dialog的位置在底部
         lp.gravity = Gravity.BOTTOM;
         window.setAttributes(lp);
