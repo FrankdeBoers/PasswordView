@@ -35,7 +35,7 @@
         android:keepScreenOn="true"
         android:keyBackground="@drawable/selector_key_board"
         android:keyTextColor="@android:color/black"
-        android:keyTextSize="26sp"
+        android:keyTextSize="46sp"
         android:shadowRadius="0" />
 
 
