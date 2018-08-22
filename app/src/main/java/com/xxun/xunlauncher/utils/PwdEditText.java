@@ -1,4 +1,4 @@
-package com.xing.pwdkeyboardview;
+package com.xxun.xunlauncher.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,8 +15,10 @@ import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.widget.EditText;
 
+import com.xxun.xunlauncher.R;
+
+
 /**
- * Created by xing on 2017/5/13.
  */
 
 public class PwdEditText extends EditText {

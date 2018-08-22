@@ -14,7 +14,7 @@
         android:src="@drawable/ic_exit" />
 
 
-    <com.xing.pwdkeyboardview.PwdEditText
+    <com.xxun.xunlauncher.utils.PwdEditText
         android:id="@+id/et_input"
         android:layout_width="300dp"
         android:layout_height="55dp"
@@ -25,7 +25,7 @@
         app:style="roundRectangle" />
 
 
-    <com.xing.pwdkeyboardview.PwdKeyboardView
+    <com.xxun.xunlauncher.utils.PwdKeyboardView
         android:id="@+id/key_board"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

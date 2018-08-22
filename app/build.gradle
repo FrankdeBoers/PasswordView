@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     defaultConfig {
-        applicationId "com.xing.pwdkeyboardview"
+        applicationId "com.xxun.xunlauncher.utils"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1

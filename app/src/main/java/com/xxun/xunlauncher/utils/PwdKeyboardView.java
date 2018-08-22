@@ -1,4 +1,4 @@
-package com.xing.pwdkeyboardview;
+package com.xxun.xunlauncher.utils;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,6 +9,8 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
 import android.util.Log;
+
+import com.xxun.xunlauncher.R;
 
 import java.util.Arrays;
 import java.util.List;

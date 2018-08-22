@@ -1,4 +1,4 @@
-package com.xing.pwdkeyboardview;
+package com.xxun.xunlauncher.utils;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -14,6 +14,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.xxun.xunlauncher.R;
+
 
 /**
  * Created by Administrator on 2018/3/25.

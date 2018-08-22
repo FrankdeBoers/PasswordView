@@ -1,9 +1,11 @@
-package com.xing.pwdkeyboardview;
+package com.xxun.xunlauncher.utils;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.xxun.xunlauncher.R;
+
 
 public class MainActivity extends AppCompatActivity {
 
