@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.xxun.xunlauncher.R;
@@ -40,13 +39,13 @@ public class PayDialogFragment extends DialogFragment implements PwdEditText.OnT
         getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
         getDialog().setCanceledOnTouchOutside(false);
         View view = inflater.inflate(R.layout.layout_pay_dialog, null);
-        ImageView exitImgView = (ImageView) view.findViewById(R.id.iv_exit);
-        exitImgView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PayDialogFragment.this.dismiss();
-            }
-        });
+//        ImageView exitImgView = (ImageView) view.findViewById(R.id.iv_exit);
+//        exitImgView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                PayDialogFragment.this.dismiss();
+//            }
+//        });
         final PwdEditText editText = (PwdEditText) view.findViewById(R.id.et_input);
         editText.setOnTextInputListener(this);
         PwdKeyboardView keyboardView = (PwdKeyboardView) view.findViewById(R.id.key_board);

@@ -124,7 +124,7 @@ public class PwdEditText extends EditText {
         pwdDotPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         pwdDotPaint.setStyle(Paint.Style.FILL);
         pwdDotPaint.setColor(pwdDotColor);
-        pwdDotPaint.setTextSize(52);
+        pwdDotPaint.setTextSize(35);
 
         halfStrokeWidth = strokeWidth / 2;
 
@@ -204,8 +204,11 @@ public class PwdEditText extends EditText {
 //            canvas.drawCircle(halfStrokeWidth + cellWidth / 2 + cellWidth * (i - 1), (mHeight) / 2,
 //                    pwdDotRadius, pwdDotPaint);
 //            String mShowNumber = mInputNumber.substring(i);
+//            if (mInputNumber != null) {
+//                canvas.drawText(mInputNumber.substring(i - 1, i), halfStrokeWidth + cellWidth / 2 + cellWidth * (i - 1), (mHeight) / 2,
+//                        pwdDotPaint);
             if (mInputNumber != null) {
-                canvas.drawText(mInputNumber.substring(i - 1, i), halfStrokeWidth + cellWidth / 2 + cellWidth * (i - 1), (mHeight) / 2,
+                canvas.drawText(mInputNumber.substring(i - 1, i), cellWidth / 4 + cellWidth * (i - 1), (mHeight) * 3 / 4,
                         pwdDotPaint);
             }
         }

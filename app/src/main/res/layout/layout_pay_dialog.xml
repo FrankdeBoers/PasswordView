@@ -5,20 +5,19 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <ImageView
+ <!--   <ImageView
         android:id="@+id/iv_exit"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/ic_exit" />
+        android:src="@drawable/ic_exit" />-->
 
 
     <com.xxun.xunlauncher.utils.PwdEditText
         android:id="@+id/et_input"
-        android:layout_width="300dp"
+        android:layout_width="220dp"
         android:layout_height="55dp"
-        android:layout_below="@id/iv_exit"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         app:pwdCount="4"
