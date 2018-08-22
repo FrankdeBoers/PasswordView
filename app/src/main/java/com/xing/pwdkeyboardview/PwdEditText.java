@@ -67,6 +67,8 @@ public class PwdEditText extends EditText {
 
     private int mCurInputCount;  // 当前输入字符个数
 
+    private String mInputNumber;
+
 
     public PwdEditText(Context context) {
         this(context, null);
@@ -148,7 +150,9 @@ public class PwdEditText extends EditText {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-                Log.d("PwdEditText", "onTextChanged s: " + s);
+                Log.d("PwdEditText", "onTextChanged s: " + s + " start " + start + " before " + before);
+                mInputNumber = s.toString()/*.substring(start)*/;
+                Log.d("PwdEditText", "mInputNumber " + mInputNumber);
                 if (onTextChangedListener != null) {
                     onTextChangedListener.onTextChanged(s, start, before, count);
                 }
@@ -197,10 +201,12 @@ public class PwdEditText extends EditText {
         for (int i = 1; i <= mCurInputCount; i++) {
 //            canvas.drawCircle(halfStrokeWidth + cellWidth / 2 + cellWidth * (i - 1), (mHeight) / 2,
 //                    pwdDotRadius, pwdDotPaint);
-            canvas.drawText("1", halfStrokeWidth + cellWidth / 2 + cellWidth * (i - 1), (mHeight) / 2,
-                    pwdDotPaint);
+//            String mShowNumber = mInputNumber.substring(i);
+            if (mInputNumber != null) {
+                canvas.drawText(mInputNumber.substring(i - 1, i), halfStrokeWidth + cellWidth / 2 + cellWidth * (i - 1), (mHeight) / 2,
+                        pwdDotPaint);
+            }
         }
-
     }
 
     // 绘制竖直方向分割线
