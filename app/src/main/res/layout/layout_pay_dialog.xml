@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/black">
 
     <!--   <ImageView
            android:id="@+id/iv_exit"
@@ -14,37 +14,43 @@
            android:src="@drawable/ic_exit" />-->
 
 
-
-
     <com.xxun.xunlauncher.utils.PwdEditText
         android:id="@+id/et_input"
-        android:layout_width="220dp"
-        android:layout_height="55dp"
+        android:layout_width="200dp"
+        android:layout_height="74dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/margintop"
         app:pwdCount="4"
         app:style="roundRectangle" />
+
+    <TextView
+        android:id="@+id/input_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_input"
+        android:layout_marginTop="@dimen/margintop"
+        android:gravity="center_horizontal"
+        android:text="@string/input_pwd"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/input_text" />
 
 
     <com.xxun.xunlauncher.utils.PwdKeyboardView
         android:id="@+id/key_board"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/et_input"
-        android:layout_marginTop="40dp"
-        android:background="#919191"
+        android:layout_height="118dp"
+        android:layout_below="@id/input_pwd"
         android:keepScreenOn="true"
         android:keyBackground="@drawable/selector_key_board"
         android:keyTextColor="@android:color/black"
-        android:keyTextSize="46sp"
         android:shadowRadius="0" />
 
     <TextView
         android:id="@+id/lockview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent"
+        android:visibility="gone" />
 
 
 </RelativeLayout>

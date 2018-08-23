@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input_text">18px</dimen>
+    <dimen name="margintop">12dp</dimen>
+    
+</resources>

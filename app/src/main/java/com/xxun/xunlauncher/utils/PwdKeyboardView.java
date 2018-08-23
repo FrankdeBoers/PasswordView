@@ -13,7 +13,6 @@ import android.util.Log;
 import com.xxun.xunlauncher.R;
 
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by Administrator on 2018/3/25.
@@ -62,16 +61,16 @@ public class PwdKeyboardView extends KeyboardView implements KeyboardView.OnKeyb
     @Override
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        List<Keyboard.Key> keys = getKeyboard().getKeys();
-        for (Keyboard.Key key : keys) {
-            if (key.codes[0] == KEY_EMPTY) {
-                drawKeyBackground(key, canvas, delKeyBackgroundColor);
-            }
-            if (key.codes[0] == Keyboard.KEYCODE_DELETE) {
-                drawKeyBackground(key, canvas, delKeyBackgroundColor);
-                drawKeyIcon(key, canvas, getResources().getDrawable(R.drawable.ic_delete));
-            }
-        }
+//        List<Keyboard.Key> keys = getKeyboard().getKeys();
+//        for (Keyboard.Key key : keys) {
+//            if (key.codes[0] == KEY_EMPTY) {
+//                drawKeyBackground(key, canvas, delKeyBackgroundColor);
+//            }
+//            if (key.codes[0] == Keyboard.KEYCODE_DELETE) {
+//                drawKeyBackground(key, canvas, delKeyBackgroundColor);
+//                drawKeyIcon(key, canvas, getResources().getDrawable(R.drawable.ic_delete));
+//            }
+//        }
 
     }
 
@@ -152,6 +151,10 @@ public class PwdKeyboardView extends KeyboardView implements KeyboardView.OnKeyb
             }
         }
 
+        switch (primaryCode) {
+            case 49:
+        }
+
 
     }
 
@@ -191,6 +194,7 @@ public class PwdKeyboardView extends KeyboardView implements KeyboardView.OnKeyb
     public void setOnKeyListener(OnKeyListener listener) {
         this.listener = listener;
     }
+
 
 
 }

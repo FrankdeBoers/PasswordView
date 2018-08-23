@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PwdKeyboardView</string>
+    <string name="input_pwd">请输入应用密码</string>
 </resources>

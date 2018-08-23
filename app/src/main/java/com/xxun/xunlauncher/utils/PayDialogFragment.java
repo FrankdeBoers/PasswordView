@@ -82,6 +82,7 @@ public class PayDialogFragment extends DialogFragment implements PwdEditText.OnT
         editText = (PwdEditText) view.findViewById(R.id.et_input);
         editText.setOnTextInputListener(this);
         PwdKeyboardView keyboardView = (PwdKeyboardView) view.findViewById(R.id.key_board);
+//        keyboardView.setPreviewEnabled(true);
         keyboardView.setOnKeyListener(new PwdKeyboardView.OnKeyListener() {
             @Override
             public void onInput(String text) {
