@@ -5,13 +5,15 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
- <!--   <ImageView
-        android:id="@+id/iv_exit"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_exit" />-->
+    <!--   <ImageView
+           android:id="@+id/iv_exit"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:src="@drawable/ic_exit" />-->
+
+
 
 
     <com.xxun.xunlauncher.utils.PwdEditText
@@ -36,6 +38,13 @@
         android:keyTextColor="@android:color/black"
         android:keyTextSize="46sp"
         android:shadowRadius="0" />
+
+    <TextView
+        android:id="@+id/lockview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/colorAccent"/>
 
 
 </RelativeLayout>
